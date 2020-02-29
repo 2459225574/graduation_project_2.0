@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+    <title>物联网资源中心</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="keywords" content="物联网资源中心"/>
+    <meta name="description" content="物联网资源中心"/>
+    <meta name="author" content="物联网资源中心" />
+    <meta name="site" content="https://blog.52itstyle.vip" />
+    <link rel="stylesheet" th:href="@{/iview/styles/iview.css}">
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body data-type="index">
+<header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <a href="javascript:;" class="tpl-logo" style="width: 80px;">
+            <img src="img/zyzx.png" alt="" style="height: 70px;width: 70px; ">
+        </a>
+        物联网资源中心
+    </div>
+    <!--<div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right"></div>-->
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+        <ul id="app" class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+            <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                    <span class="tpl-header-list-user-nick">青阳廿四</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
+                </a>
+                <ul class="am-dropdown-content" v-cloak >
+                    <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
+                    <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="#" @click="logout"><span class="am-icon-power-off"></span> 退出</a></li>
+                </ul>
+            </li>
+            <!--<li><a href="#" @click="logout" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>-->
+        </ul>
+    </div>
+</header>
+<div class="tpl-page-container tpl-page-header-fixed">
+    <!--<div class="tpl-left-nav tpl-left-nav-hover">-->
+        <!--<div class="tpl-left-nav-list">-->
+            <!--<ul class="tpl-left-nav-menu">-->
+                <!--<li class="tpl-left-nav-item">-->
+                    <!--<a href="index.shtml" class="nav-link active">-->
+                        <!--<i class="am-icon-home"></i>-->
+                        <!--<span>首页</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li class="tpl-left-nav-item" >-->
+                    <!--<a href="javascript:;" class="nav-link tpl-left-nav-link-list">-->
+                        <!--<i class="am-icon-wpforms"></i>-->
+                        <!--<span>用户管理</span>-->
+                        <!--<i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>-->
+                    <!--</a>-->
+                    <!--<ul class="tpl-left-nav-sub-menu" style="display: block;">-->
+                        <!--<li>-->
+                            <!--<a href="form-amazeui.html">-->
+                                <!--<i class="am-icon-angle-right"></i>-->
+                                <!--<span>Amaze UI 表单</span>-->
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="tpl-content-wrapper" style="padding-left: 0px;">
+
+        <iframe scrolling="yes" frameborder="0"
+                style="width: 100%; min-height: 600px; overflow: visible; background: #fff;"
+                src="disk.shtml"  id="main" name="main">
+        </iframe>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/iscroll.js"></script>
+<script src="assets/js/app.js"></script>
+<script th:src="@{libs/vue.min.js}"></script>
+<script th:src="@{/iview/iview.min.js}" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        var vm = new Vue({
+            el: '#app',
+
+            methods: {
+                logout: function (event) {
+                    var self = this;
+                    var data = "username="+vm.username+"&password="+vm.password;
+                    $.ajax({
+                        type: "POST",
+                        url: "user/logout",
+                        dataType: "json",
+                        success: function(result){
+                            if(result.code == 0){
+                                self.$Notice.warning({
+                                    title: '友情提醒',
+                                    desc: '退出成功！'
+                                });
+                                parent.location.href ='/';
+
+                            }else{
+                                self.$Notice.warning({
+                                    title: '友情提醒',
+                                    desc: '退出登陆失败！'
+                                });
+                            }
+                        }
+                    });
+                },
+            },
+            created: function(){
+
+            }
+        });
+    });
+
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+    <!--<meta charset="utf-8">-->
+    <!--<meta name="viewport" content="width=device-width,user-scalable=no"/>-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>-->
+    <!--<meta name="keywords" content="私有云网盘"/>-->
+    <!--<meta name="description" content="世界上最好的私有云网盘"/>-->
+    <!--<meta name="author" content="小柒2012" />-->
+    <!--<meta name="site" content="https://blog.52itstyle.vip" />-->
+    <!--<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
+    <!--<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">-->
+    <!--<meta name="apple-mobile-web-app-title" content="Amaze UI" />-->
+    <!--<link rel="stylesheet" href="assets/css/amazeui.min.css" />-->
+    <!--<link rel="stylesheet" href="assets/css/admin.css">-->
+    <!--<link rel="stylesheet" href="assets/css/app.css">-->
+<!--</head>-->
+
+<!--<body data-type="index">-->
+    <!--&lt;!&ndash;<header class="am-topbar am-topbar-inverse admin-header">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="am-topbar-brand">&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="javascript:;" class="tpl-logo">&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="assets/img/logo.png" alt="">&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="am-collapse am-topbar-collapse" id="topbar-collapse">&ndash;&gt;-->
+            <!--&lt;!&ndash;<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<span class="am-icon-bell-o"></span> 提醒 <span class="am-badge tpl-badge-success am-round">5</span></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul class="am-dropdown-content tpl-dropdown-content">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li class="tpl-dropdown-content-external">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3><a href="###">全部</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> 【预览模块】移动端 查看时 手机、电脑框隐藏。</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="tpl-dropdown-list-fr">3小时前</span>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-check tpl-dropdown-ico-btn-size tpl-badge-danger"></span> 移动端，导航条下边距处理</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="tpl-dropdown-list-fr">15分钟前</span>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-bell-o tpl-dropdown-ico-btn-size tpl-badge-warning"></span> 追加统计代码</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="tpl-dropdown-list-fr">2天前</span>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<span class="am-icon-comment-o"></span> 消息 <span class="am-badge tpl-badge-danger am-round">9</span></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul class="am-dropdown-content tpl-dropdown-content">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li class="tpl-dropdown-content-external">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3><a href="###">全部</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#" class="tpl-dropdown-content-message">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-photo">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<img src="assets/img/user02.png" alt=""> </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-subject">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<span class="tpl-dropdown-content-from"> 禁言小张 </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-time">10分钟前 </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-font"> Amaze UI 的诞生，依托于 GitHub 及其他技术社区上一些优秀的资源；Amaze UI 的成长，则离不开用户的支持。 </span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#" class="tpl-dropdown-content-message">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-photo">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<img src="assets/img/user03.png" alt=""> </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-subject">&ndash;&gt;-->
+                      <!--&lt;!&ndash;<span class="tpl-dropdown-content-from"> Steam </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-time">18分钟前</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="tpl-dropdown-content-font"> 为了能最准确的传达所描述的问题， 建议你在反馈时附上演示，方便我们理解。 </span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<span class="am-icon-calendar"></span> 进度 <span class="am-badge tpl-badge-primary am-round">4</span></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul class="am-dropdown-content tpl-dropdown-content">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li class="tpl-dropdown-content-external">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3><a href="###">全部</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="javascript:;" class="tpl-dropdown-content-progress">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="task">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<span class="desc">Amaze UI 用户中心 v1.2 </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="percent">45%</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="progress">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width:45%"></div></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="javascript:;" class="tpl-dropdown-content-progress">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="task">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<span class="desc">新闻内容页 </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="percent">30%</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="progress">&ndash;&gt;-->
+                       <!--&lt;!&ndash;<div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="javascript:;" class="tpl-dropdown-content-progress">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="task">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<span class="desc">管理中心 </span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="percent">60%</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="progress">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle style="float: right;">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul class="am-dropdown-content">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</header>&ndash;&gt;-->
+
+
+
+    <!--&lt;!&ndash;<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle style="float: right;padding-right: 10px;margin-top: 5px;">&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="tpl-header-list-user-nick">小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>&ndash;&gt;-->
+        <!--&lt;!&ndash;</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<ul class="am-dropdown-content">&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>&ndash;&gt;-->
+        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+    <!--<header class="am-topbar am-topbar-inverse admin-header">-->
+        <!--<div class="am-collapse am-topbar-collapse" id="topbar-collapse">-->
+            <!--<ul id="app" class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">-->
+                <!--<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>-->
+                    <!--<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">-->
+                        <!--<span class="tpl-header-list-user-nick">青阳廿四</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>-->
+                    <!--</a>-->
+                    <!--<ul class="am-dropdown-content" v-cloak >-->
+                        <!--<li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>-->
+                        <!--<li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>-->
+                        <!--<li><a href="#" @click="logout"><span class="am-icon-power-off"></span> 退出</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li><a href="#" @click="logout" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</header>-->
+
+
+
+    <!--<div class="tpl-content-wrapper" style="width: 100%;padding: 0px;">-->
+
+        <!--<iframe scrolling="yes" frameborder="0"-->
+                <!--style="width: 100%; min-height: 650px; overflow: visible; background: #fff;"-->
+                <!--src="disk.shtml"  id="main" name="main">-->
+        <!--</iframe>-->
+    <!--</div>-->
+    <!--<script src="assets/js/jquery.min.js"></script>-->
+    <!--<script src="assets/js/amazeui.min.js"></script>-->
+    <!--<script src="assets/js/iscroll.js"></script>-->
+    <!--<script src="assets/js/app.js"></script>-->
+<!--</body>-->
+
+<!--</html>-->
