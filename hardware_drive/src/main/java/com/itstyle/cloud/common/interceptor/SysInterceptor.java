@@ -2,6 +2,7 @@ package com.itstyle.cloud.common.interceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.itstyle.cloud.common.entity.ApplicationConfig;
 import com.itstyle.cloud.common.entity.SysUser;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.method.HandlerMethod;
@@ -25,17 +26,11 @@ public class SysInterceptor  implements HandlerInterceptor {
 		//拦截所有请求
 		//使用ribbon请求用户模块去验证用户是否登录
 
-//		if (handler instanceof HandlerMethod){
-//			SysUser user =  (SysUser) request.getSession().getAttribute("user");
-//			if(user==null){
-//				response.sendRedirect("/");
-//				return false;
-//			}else{
-//				return true;
-//			}
-//		}else{
-//			return true;
-//		}
+		SysUser user =  (SysUser) request.getSession().getAttribute("user");
+		if(user==null){
+			response.sendRedirect(ApplicationConfig.USER_MANAGE_SYSTEM+"/member/login");
+			return false;
+		}
 		return true;
 	}
 

@@ -25,7 +25,7 @@ public class LoginIntercept implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         System.out.println("***********************hardware_api拦截路径："+httpServletRequest.getRequestURI()+"*************************");
-        UserBaseInfo user = (UserBaseInfo) httpServletRequest.getSession().getAttribute("username");
+        UserBaseInfo user = (UserBaseInfo) httpServletRequest.getSession().getAttribute("user");
         if (user == null){
             System.out.println(ApplicationConfig.USER_MANAGE_SYSTEM+"/member/login");
             httpServletResponse.sendRedirect(ApplicationConfig.USER_MANAGE_SYSTEM+"/member/login");
