@@ -13,14 +13,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
-/**
- * 云盘服务
- * @author 小柒2012
- * 启动  java -Xms200m -Xmx600m -jar spring-boot-CloudDisk.jar &
- * 如果是 Linux 启动，不要直接关闭窗口，要使用 exit 退出。
- * 插件：https://github.com/Studio-42/elFinder
- * 参考：https://github.com/trustsystems/elfinder-java-connector
- */
 @SpringBootApplication
 @EnableAsync
 public class HardwareDriveApplication extends SpringBootServletInitializer  {

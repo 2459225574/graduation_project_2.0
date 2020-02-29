@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.cc.entity.ApplicationConfig",
+      "name": "hardware",
+      "type": "com.cc.entity.ApplicationConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.cc.entity.ApplicationConfig",
+      "name": "hardware.user-system-addr",
+      "type": "java.lang.String"
+    }
+  ]
+}

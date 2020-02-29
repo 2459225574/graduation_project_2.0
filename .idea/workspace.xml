@@ -1,7 +1,691 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ba1db82-8c91-450b-add3-9e81cde96d6a" name="Default Changelist" comment="" />
+    <list default="true" id="5ba1db82-8c91-450b-add3-9e81cde96d6a" name="Default Changelist" comment="第一个模板,可复原">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/HardwareAPIApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/dao/EquipmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/api/SocketAccept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/api/SocketList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/config/HardwareConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/config/OrderSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/entity/SocketConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/intercept/LoginIntercept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/intercept/WebAppInterceptConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/css/amazeui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/app-icon72x72@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/admin-chrome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/admin-firefox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/admin-ie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/admin-opera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/admin-safari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/adminPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/blogPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/landing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/landingPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/loginPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/examples/sidebarPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/i/startup-640x1096.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/a9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/lbbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/syncfusion-icons-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/user01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/user02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/user03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/user04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/user05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/user06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/img/user07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/js/amazeui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/js/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/js/iscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-beautify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-chromevox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-elastic_tabstops_lite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-emmet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-error_marker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-keybinding_menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-language_tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-linking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-modelist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-old_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-searchbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-settings_menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-spellcheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-split.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-static_highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-statusbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-textarea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-themelist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/ext-whitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/keybinding-emacs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/keybinding-vim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-abap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-abc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-actionscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-ada.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-apache_conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-applescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-asciidoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-assembly_x86.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-autohotkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-batchfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-bro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-c9search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-c_cpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-cirru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-clojure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-cobol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-coffee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-coldfusion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-csharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-csound_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-csound_orchestra.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-csound_score.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-curly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-dart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-django.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-dockerfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-dot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-drools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-eiffel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-ejs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-elixir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-elm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-erlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-forth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-fortran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-ftl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-gcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-gherkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-gitignore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-glsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-gobstones.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-golang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-graphqlschema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-groovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-haml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-handlebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-haskell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-haskell_cabal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-haxe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-hjson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-html_elixir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-html_ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-ini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-io.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-jack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-jade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-java.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-jsoniq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-jsp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-jssm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-jsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-julia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-kotlin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-latex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-lean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-less.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-liquid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-lisp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-live_script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-livescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-logiql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-lsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-luapage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-lucene.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-makefile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-mask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-matlab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-maze.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-mel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-mips_assembler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-mipsassembler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-mushcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-mysql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-nix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-nsis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-objectivec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-ocaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-pascal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-perl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-pgsql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-pig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-plain_text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-powershell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-praat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-prolog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-protobuf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-r.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-razor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-rdoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-red.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-rhtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-rst.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-rust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-sass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-scad.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-scala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-scheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-scss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-sh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-sjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-smarty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-snippets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-soy_template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-space.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-sparql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-sql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-sqlserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-stylus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-swift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-swig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-tcl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-tex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-textile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-toml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-tsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-turtle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-twig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-typescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-vala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-vbscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-velocity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-verilog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-vhdl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-wollok.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-xquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/mode-yaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/abap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/abc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/actionscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/ada.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/apache_conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/applescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/asciidoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/assembly_x86.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/autohotkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/batchfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/bro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/c9search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/c_cpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/cirru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/clojure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/cobol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/coffee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/coldfusion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/csharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/csound_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/csound_orchestra.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/csound_score.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/curly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/dart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/django.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/dockerfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/dot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/drools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/eiffel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/ejs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/elixir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/elm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/erlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/forth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/fortran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/ftl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/gcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/gherkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/gitignore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/glsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/gobstones.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/golang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/graphqlschema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/groovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/haml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/handlebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/haskell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/haskell_cabal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/haxe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/hjson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/html_elixir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/html_ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/ini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/io.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/jack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/jade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/java.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/jsoniq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/jsp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/jssm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/jsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/julia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/kotlin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/latex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/lean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/less.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/liquid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/lisp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/live_script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/livescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/logiql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/lsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/luapage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/lucene.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/makefile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/mask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/matlab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/maze.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/mel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/mips_assembler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/mipsassembler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/mushcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/mysql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/nix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/nsis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/objectivec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/ocaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/pascal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/perl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/pgsql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/pig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/plain_text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/powershell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/praat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/prolog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/protobuf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/r.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/razor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/rdoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/red.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/rhtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/rst.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/rust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/sass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/scad.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/scala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/scheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/scss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/sh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/sjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/smarty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/snippets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/soy_template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/space.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/sparql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/sql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/sqlserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/stylus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/swift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/swig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/tcl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/tex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/textile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/toml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/tsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/turtle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/twig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/typescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/vala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/vbscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/velocity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/verilog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/vhdl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/wollok.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/xquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/snippets/yaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-ambiance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-chaos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-chrome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-clouds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-clouds_midnight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-cobalt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-crimson_editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-dawn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-dracula.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-dreamweaver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-eclipse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-github.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-gob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-gruvbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-idle_fingers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-iplastic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-katzenmilch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-kr_theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-kuroir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-merbivore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-merbivore_soft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-mono_industrial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-monokai.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-pastel_on_dark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-solarized_dark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-solarized_light.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-sqlserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-terminal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-textmate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-tomorrow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-tomorrow_night.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-tomorrow_night_blue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-tomorrow_night_bright.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-tomorrow_night_eighties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-twilight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-vibrant_ink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/theme-xcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-coffee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/ace/worker-xquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/css/elfinder.full.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/css/elfinder.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/arrows-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/arrows-normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/crop.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/dialogs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_aceeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_ckeditor5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_codemirror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_creativecloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_pixlreditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_pixlrexpress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_simplemde.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_tinymce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/edit_zohooffice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/icons-big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/icons-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/progress.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/quicklook-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/quicklook-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/resize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/spinner-mini.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/toolbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/trashmesh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_dropbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_ftp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_googledrive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_local.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_onedrive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_sql.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/img/volume_icon_zip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/elfinder.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/elfinder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/extras/editors.default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/extras/editors.default.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/extras/quicklook.googledocs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/extras/quicklook.googledocs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.LANG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.fallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.ug_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/elfinder.zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/cs.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/en.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/es.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/ja.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/ko.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/pl.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/ru.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/i18n/help/sk.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/jquery-1.11.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/js/proxy/elFinderSupportVer1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/sounds/rm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/img/fj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/img/fjj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/img/iot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/img/zyzx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/iview/iview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/iview/iview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/iview/styles/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/iview/styles/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/iview/styles/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/iview/styles/iview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/transfer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/libs/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/static/libs/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/templates/carControl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/src/test/java/com/cc/handware/api/SocketAcceptTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_api/target/classes/com/cc/HardwareAPIApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/entity/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_drive/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_drive/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/HardwareDriveApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/HardwareDriveApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/interceptor/SysInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/interceptor/SysInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_drive/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_drive/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_drive/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_drive/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_drive/target/classes/com/itstyle/cloud/HardwareDriveApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_drive/target/classes/com/itstyle/cloud/HardwareDriveApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware_drive/target/classes/com/itstyle/cloud/common/interceptor/SysInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/hardware_drive/target/classes/com/itstyle/cloud/common/interceptor/SysInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_manage/src/main/java/com/geekcattle/controller/member/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_manage/src/main/java/com/geekcattle/controller/member/HomeController.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/user_manage/target/" />
     <ignored path="$PROJECT_DIR$/hardware_drive/target/" />
@@ -15,6 +699,36 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="graduation_user_manage@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="graduation_user_manage@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="graduation_user_manage@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="graduation_user_manage: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1807046747">
       <usages-collector id="statistics.lifecycle.project">
@@ -25,44 +739,186 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="4" />
+          <entry key="html" value="9" />
           <entry key="iml" value="1" />
-          <entry key="java" value="4" />
-          <entry key="properties" value="1" />
-          <entry key="xml" value="4" />
-          <entry key="yml" value="1" />
+          <entry key="java" value="68" />
+          <entry key="png" value="1" />
+          <entry key="properties" value="9" />
+          <entry key="sql" value="1" />
+          <entry key="xml" value="15" />
+          <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="HTML" value="9" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="4" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="4" />
-          <entry key="YAML" value="1" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="68" />
+          <entry key="Properties" value="9" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="15" />
+          <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="xml" value="15" />
+          <entry key="dummy" value="14" />
+          <entry key="html" value="138" />
+          <entry key="java" value="3079" />
+          <entry key="properties" value="4" />
+          <entry key="txt" value="35" />
+          <entry key="xml" value="21" />
+          <entry key="yml" value="314" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="XML" value="15" />
+          <entry key="HTML" value="138" />
+          <entry key="JAVA" value="3079" />
+          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="21" />
+          <entry key="YAML" value="314" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/intercept/LoginIntercept.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/interceptor/SysInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/entity/ApplicationConfig.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/HardwareDriveApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user_manage/src/main/java/com/geekcattle/UserManageApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hardware_api/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hardware_api/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/ApplicationConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>lombok</find>
+      <find>nekoHTML</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/user_manage/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/entity.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/config/OrderSet.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/resources/mybatis/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/UserEntity.java" />
         <option value="$PROJECT_DIR$/hardware_drive/pom.xml" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/UserEquipment.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/UserBaseInfo.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/HardwareAPIApplication.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/api/SocketQueue.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/api/SocketAccept.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/config/HardwareConfig.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/test/java/com/cc/handware/api/SocketAcceptTest.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/EquipmentAndGroup.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/entity/SocketConnection.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/dao/EquipmentMapper.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/api/SocketList.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/Controller/UserController.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/resources/templates/carControl.html" />
+        <option value="$PROJECT_DIR$/user_manage/src/main/java/com/geekcattle/controller/member/HomeController.java" />
+        <option value="$PROJECT_DIR$/hardware_drive/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/HardwareDriveApplication.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/intercept/WebAppInterceptConfigurer.java" />
         <option value="$PROJECT_DIR$/hardware_api/pom.xml" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/interceptor/SysInterceptor.java" />
+        <option value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/intercept/LoginIntercept.java" />
+        <option value="$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/entity/ApplicationConfig.java" />
       </list>
     </option>
   </component>
@@ -82,17 +938,25 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/hardware_api/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/package.json" />
       <path value="$PROJECT_DIR$/hardware_drive/src/main/resources/static/elfinder/jquery-ui-1.12.1.custom/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -124,6 +988,143 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="hardware_drive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="user_manage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="user_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="user_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="user_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="user_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="geekcattle" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -133,19 +1134,48 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582944152252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582988012048" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.cc.handware.api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itstyle.cloud.common.entity" />
+      <recent name="com.cc.intercept" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\study\intelliJ_IDEA\java_program\graduation_project\hardware_api\src\main\resources" />
+      <recent name="F:\study\intelliJ_IDEA\java_program\graduation_project\hardware_api\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\study\intelliJ_IDEA\java_program\graduation_project\hardware_api\src\main\resources\mybatis" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,7 +1189,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.HardwareDriveApplication">
+  <component name="RunManager" selected="Spring Boot.UserManageApplication">
+    <configuration name="SocketAcceptTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cc.handware.api.SocketAcceptTest" />
+      <module name="hardware_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.handware.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HardwareAPIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hardware_api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.HardwareAPIApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HardwareDriveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hardware_drive" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.itstyle.cloud.HardwareDriveApplication" />
@@ -177,7 +1227,14 @@
     <list>
       <item itemvalue="Spring Boot.UserManageApplication" />
       <item itemvalue="Spring Boot.HardwareDriveApplication" />
+      <item itemvalue="Spring Boot.HardwareAPIApplication" />
+      <item itemvalue="Application.SocketAcceptTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SocketAcceptTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -189,16 +1246,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582942449605</updated>
-      <workItem from="1582942466906" duration="2267000" />
+      <workItem from="1582942466906" duration="29373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2267000" />
+    <option name="totallyTimeSpent" value="29373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info id="Persistence" side_tool="true" />
       <window_info id="JRebel" sideWeight="0.5010395" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" />
       <window_info id="UI Designer" />
@@ -209,26 +1268,26 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32914925" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50067025" side_tool="true" weight="0.39944133" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Messages" sideWeight="0.49865952" weight="0.32914925" />
       <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="JRebel Console" sideWeight="0.5013405" side_tool="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39888424" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" weight="0.3297587" />
+      <window_info anchor="right" id="Database" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Bean Validation" />
@@ -242,6 +1301,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一个模板,可复原" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一个模板,可复原" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/user_manage/pom.xml">
@@ -265,13 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_manage/src/main/java/com/geekcattle/UserManageApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/entity/FileInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -279,49 +1335,417 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/HardwareDriveApplication.java">
+    <entry file="file://$PROJECT_DIR$/hardware_api/hardware_api.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/config/OrderSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/resources/mybatis/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dd4d5ca8-446a-4afb-ad0d-e65771c34745/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hardware_drive/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="139" selection-end-column="12" />
+        <state relative-caret-position="104">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hardware_api/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        <state relative-caret-position="189">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/plugin.jar!/sun/plugin/javascript/navig/LinkArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/config/HardwareConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/test/java/com/cc/handware/api/SocketAcceptTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="95" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/EquipmentAndGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/entity/SocketConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/dao/EquipmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="16" column="69" lean-forward="true" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/api/SocketList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="51" column="116" lean-forward="true" selection-start-line="51" selection-start-column="116" selection-end-line="51" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/handware/api/SocketAccept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/resources/static/img/fj.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/resources/templates/file.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/resources/templates/file_fe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="205" column="27" selection-start-line="205" selection-start-column="27" selection-end-line="205" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/UserBaseInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="67" column="62" lean-forward="true" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/resources/templates/carControl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_manage/src/main/java/com/geekcattle/controller/member/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1840">
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/HardwareAPIApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/interceptor/MyWebAppConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/interceptor/MyAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/intercept/WebAppInterceptConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user_manage/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="293">
+          <caret line="195" column="12" lean-forward="true" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hardware_api/hardware_api.iml">
+    <entry file="file://$PROJECT_DIR$/hardware_api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_manage/src/main/java/com/geekcattle/UserManageApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/entity/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_api/src/main/java/com/cc/intercept/LoginIntercept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/entity/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/HardwareDriveApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware_drive/src/main/java/com/itstyle/cloud/common/interceptor/SysInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>hardware_api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

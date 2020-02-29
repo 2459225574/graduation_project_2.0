@@ -38,7 +38,7 @@ public class HomeController {
     }
 
     /**
-     * 登录页面
+     * 登录页面 /member/login
      * @return
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
