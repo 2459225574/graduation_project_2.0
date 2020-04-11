@@ -12,6 +12,7 @@
         <!--<module>main_project</module>-->
         <module>hardware_drive</module>
         <module>eurake_server</module>
+        <module>main_project</module>
     </modules>
 
 </project>

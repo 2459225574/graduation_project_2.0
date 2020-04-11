@@ -3,9 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurake_server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hardware_api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hardware_drive" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/main_project" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user_manage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/main_project" charset="UTF-8" />
   </component>
 </project>

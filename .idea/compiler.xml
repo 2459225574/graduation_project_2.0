@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurake_server" />
         <module name="hardware_drive" />
+        <module name="main_project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

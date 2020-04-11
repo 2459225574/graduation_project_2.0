@@ -1,0 +1,103 @@
+2020-04-11 17:48:41.956 INFO  com.itstyle.cloud.HardwareDriveApplication Line:48  - Starting HardwareDriveApplication on chenchao with PID 18692 (F:\study\intelliJ_IDEA\java_program\graduation_project\hardware_drive\target\classes started by hp in F:\study\intelliJ_IDEA\java_program\graduation_project)
+2020-04-11 17:48:41.959 INFO  com.itstyle.cloud.HardwareDriveApplication Line:593 - No active profile set, falling back to default profiles: default
+2020-04-11 17:48:42.566 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@450794b4: startup date [Sat Apr 11 17:48:42 CST 2020]; root of context hierarchy
+2020-04-11 17:48:45.691 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$409ae50b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-11 17:48:46.555 INFO  org.xnio Line:104 - XNIO version 3.3.8.Final
+2020-04-11 17:48:46.600 INFO  org.xnio.nio Line:55  - XNIO NIO Implementation Version 3.3.8.Final
+2020-04-11 17:48:46.786 INFO  io.undertow.servlet Line:360 - Initializing Spring embedded WebApplicationContext
+2020-04-11 17:48:46.786 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 4220 ms
+2020-04-11 17:48:47.084 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-11 17:48:47.124 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-11 17:48:47.126 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-11 17:48:47.128 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-11 17:48:47.130 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-11 17:48:48.040 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:356 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-11 17:48:48.058 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-11 17:48:48.223 INFO  org.hibernate.Version Line:37  - HHH000412: Hibernate Core {5.0.12.Final}
+2020-04-11 17:48:48.225 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2020-04-11 17:48:48.227 INFO  org.hibernate.cfg.Environment Line:317 - HHH000021: Bytecode provider name : javassist
+2020-04-11 17:48:48.367 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-11 17:48:49.503 INFO  org.hibernate.dialect.Dialect Line:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-11 17:48:50.347 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate Line:105 - HHH000228: Running hbm2ddl schema update
+2020-04-11 17:48:50.550 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:392 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-11 17:48:52.344 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@450794b4: startup date [Sat Apr 11 17:48:42 CST 2020]; root of context hierarchy
+2020-04-11 17:48:52.453 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{module}/{sub}/{url}.shtml]}" onto public java.lang.String com.itstyle.cloud.common.config.IndexController.page(java.lang.String,java.lang.String,java.lang.String)
+2020-04-11 17:48:52.455 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{url}.shtml]}" onto public java.lang.String com.itstyle.cloud.common.config.IndexController.page(java.lang.String)
+2020-04-11 17:48:52.456 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{module}/{url}.shtml]}" onto public java.lang.String com.itstyle.cloud.common.config.IndexController.page(java.lang.String,java.lang.String)
+2020-04-11 17:48:52.457 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/download]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileDownload.downLoad(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2020-04-11 17:48:52.458 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileUpload.file()
+2020-04-11 17:48:52.459 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/multifileUpload],methods=[POST]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileUpload.multifileUpload(javax.servlet.http.HttpServletRequest)
+2020-04-11 17:48:52.460 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/fileUpload]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileUpload.fileUpload(org.springframework.web.multipart.MultipartFile)
+2020-04-11 17:48:52.461 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/elfinder/connector]}" onto public void com.itstyle.cloud.web.CloudDiskController.connector(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-04-11 17:48:52.462 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/FileList]}" onto public java.lang.Object com.itstyle.cloud.web.FileListController.getFilePathList(java.lang.String)
+2020-04-11 17:48:52.463 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/chipList]}" onto public java.lang.Object com.itstyle.cloud.web.FileListController.getChipPathList(java.lang.String)
+2020-04-11 17:48:52.464 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/user/test]}" onto public java.lang.String com.itstyle.cloud.web.UserController.test()
+2020-04-11 17:48:52.464 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/user/login]}" onto private com.itstyle.cloud.common.entity.Result com.itstyle.cloud.web.UserController.login(java.lang.String,java.lang.String)
+2020-04-11 17:48:52.466 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-11 17:48:52.467 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-11 17:48:52.498 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:349 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-04-11 17:48:52.522 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-11 17:48:52.523 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-11 17:48:52.557 INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver Line:273 - Detected @ExceptionHandler methods in RRExceptionHandler
+2020-04-11 17:48:52.599 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-11 17:48:53.380 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:58  - LiveReload server is running on port 35729
+2020-04-11 17:48:53.575 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2020-04-11 17:48:53.744 INFO  org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer Line:160 - Undertow started on port(s) 8008 (http)
+2020-04-11 17:48:53.751 INFO  com.itstyle.cloud.HardwareDriveApplication Line:57  - Started HardwareDriveApplication in 13.141 seconds (JVM running for 19.373)
+2020-04-11 17:48:53.752 INFO  com.itstyle.cloud.HardwareDriveApplication Line:29  - 物联网控制驱动资源中心 
+2020-04-11 17:49:00.782 INFO  io.undertow.servlet Line:360 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-11 17:49:00.783 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-11 17:49:00.813 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2020-04-11 19:23:14.915 INFO  com.itstyle.cloud.HardwareDriveApplication Line:48  - Starting HardwareDriveApplication on chenchao with PID 11408 (F:\study\intelliJ_IDEA\java_program\graduation_project\hardware_drive\target\classes started by hp in F:\study\intelliJ_IDEA\java_program\graduation_project)
+2020-04-11 19:23:14.948 INFO  com.itstyle.cloud.HardwareDriveApplication Line:593 - No active profile set, falling back to default profiles: default
+2020-04-11 19:23:16.530 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2839ac4c: startup date [Sat Apr 11 19:23:16 CST 2020]; root of context hierarchy
+2020-04-11 19:23:24.422 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebec675e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-11 19:23:27.353 INFO  org.xnio Line:104 - XNIO version 3.3.8.Final
+2020-04-11 19:23:27.465 INFO  org.xnio.nio Line:55  - XNIO NIO Implementation Version 3.3.8.Final
+2020-04-11 19:23:27.812 INFO  io.undertow.servlet Line:360 - Initializing Spring embedded WebApplicationContext
+2020-04-11 19:23:27.813 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 11284 ms
+2020-04-11 19:23:28.252 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-11 19:23:28.271 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-11 19:23:28.273 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-11 19:23:28.274 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-11 19:23:28.274 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-11 19:23:31.647 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:356 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-11 19:23:31.761 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-11 19:23:34.210 INFO  org.hibernate.Version Line:37  - HHH000412: Hibernate Core {5.0.12.Final}
+2020-04-11 19:23:34.213 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2020-04-11 19:23:34.215 INFO  org.hibernate.cfg.Environment Line:317 - HHH000021: Bytecode provider name : javassist
+2020-04-11 19:23:35.660 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-11 19:23:40.931 INFO  org.hibernate.dialect.Dialect Line:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-11 19:23:42.599 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate Line:105 - HHH000228: Running hbm2ddl schema update
+2020-04-11 19:23:42.947 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:392 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-11 19:23:45.709 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2839ac4c: startup date [Sat Apr 11 19:23:16 CST 2020]; root of context hierarchy
+2020-04-11 19:23:45.909 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{module}/{sub}/{url}.shtml]}" onto public java.lang.String com.itstyle.cloud.common.config.IndexController.page(java.lang.String,java.lang.String,java.lang.String)
+2020-04-11 19:23:45.911 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{url}.shtml]}" onto public java.lang.String com.itstyle.cloud.common.config.IndexController.page(java.lang.String)
+2020-04-11 19:23:45.913 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{module}/{url}.shtml]}" onto public java.lang.String com.itstyle.cloud.common.config.IndexController.page(java.lang.String,java.lang.String)
+2020-04-11 19:23:45.914 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/download]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileDownload.downLoad(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
+2020-04-11 19:23:45.916 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileUpload.file()
+2020-04-11 19:23:45.919 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/fileUpload]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileUpload.fileUpload(org.springframework.web.multipart.MultipartFile)
+2020-04-11 19:23:45.920 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/multifileUpload],methods=[POST]}" onto public java.lang.String com.itstyle.cloud.file_fe.controller.FileUpload.multifileUpload(javax.servlet.http.HttpServletRequest)
+2020-04-11 19:23:45.922 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/elfinder/connector]}" onto public void com.itstyle.cloud.web.CloudDiskController.connector(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-04-11 19:23:45.924 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/FileList]}" onto public java.lang.Object com.itstyle.cloud.web.FileListController.getFilePathList(java.lang.String)
+2020-04-11 19:23:45.925 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/file/chipList]}" onto public java.lang.Object com.itstyle.cloud.web.FileListController.getChipPathList(java.lang.String)
+2020-04-11 19:23:45.926 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/user/test]}" onto public java.lang.String com.itstyle.cloud.web.UserController.test()
+2020-04-11 19:23:45.927 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/user/login]}" onto private com.itstyle.cloud.common.entity.Result com.itstyle.cloud.web.UserController.login(java.lang.String,java.lang.String)
+2020-04-11 19:23:45.930 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-11 19:23:45.930 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-11 19:23:45.985 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:349 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-04-11 19:23:46.031 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-11 19:23:46.031 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-11 19:23:46.090 INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver Line:273 - Detected @ExceptionHandler methods in RRExceptionHandler
+2020-04-11 19:23:46.148 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-11 19:23:47.045 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2020-04-11 19:23:47.271 INFO  org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer Line:160 - Undertow started on port(s) 8008 (http)
+2020-04-11 19:23:47.284 INFO  com.itstyle.cloud.HardwareDriveApplication Line:57  - Started HardwareDriveApplication in 41.28 seconds (JVM running for 49.342)
+2020-04-11 19:23:47.284 INFO  com.itstyle.cloud.HardwareDriveApplication Line:29  - 物联网控制驱动资源中心 
+2020-04-11 19:23:47.419 INFO  io.undertow.servlet Line:360 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-11 19:23:47.421 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-11 19:23:47.471 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
