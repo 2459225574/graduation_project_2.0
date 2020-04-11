@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
@@ -21,7 +21,11 @@ public class UserController {
     @Autowired
     private HttpServletRequest  request;
 
-    @RequestMapping(value="login")
+    UserController(){
+        System.out.println("************UserController***********start*********");
+    }
+
+    @RequestMapping(value="/login")
     private Result login(String username,String password){
         String sql = "SELECT * FROM sys_user WHERE username=?";
         SysUser user = dynamicQuery.nativeQuerySingleResult(SysUser.class,sql,new Object[]{username});
@@ -35,6 +39,13 @@ public class UserController {
         }else{
             return  Result.error("账号不存在");
         }
+    }
+
+    @RequestMapping("/test")
+    public String test(){
+
+        System.out.println("*******test***********");
+        return "hello";
     }
 
 }

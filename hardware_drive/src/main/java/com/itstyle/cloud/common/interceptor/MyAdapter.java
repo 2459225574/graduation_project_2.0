@@ -7,6 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class MyAdapter extends WebMvcConfigurerAdapter{
     @Override
     public void addViewControllers( ViewControllerRegistry registry ) {
+        System.out.println("&&&&&&&&&&&WebMvcConfigurerAdapter&&&&&&&&&&&&&&&");
         registry.addViewController( "/" ).setViewName( "forward:/login.shtml" );
         registry.setOrder( Ordered.HIGHEST_PRECEDENCE );
         super.addViewControllers( registry );

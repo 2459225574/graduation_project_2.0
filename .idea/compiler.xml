@@ -7,10 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hardware_api" />
+        <module name="eurake_server" />
         <module name="hardware_drive" />
-        <module name="user_manage" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hardware_api" target="1.8" />
+      <module name="ruoyi" target="1.8" />
+      <module name="user_manage" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
